@@ -10,5 +10,4 @@ RUN pip3 install -r /opt/app/requirements.txt
 
 COPY docker-entrypoint.sh /
 
-EXPOSE 5000
 ENTRYPOINT "/docker-entrypoint.sh"
