@@ -17,6 +17,7 @@ pipeline {
 	stage('Install_requirements') {
             steps {
                 sh '''
+			source venv/bin/activate
 			pip3 install -r requirements.txt
 		'''
             }
@@ -24,6 +25,7 @@ pipeline {
         stage('Test_app') {
             steps {
                 sh '''
+			source venv/bin/activate
 			pytest &
 		'''
             }
@@ -31,6 +33,7 @@ pipeline {
         stage('Run_App') {
             steps {
                 sh '''
+			source venv/bin/activate
 			python3 src/app.py &
 		'''
             }
