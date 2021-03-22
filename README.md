@@ -1,2 +1,2 @@
-# test-jenkins-1
+# Integration Docker and Jenkins
 Test of concept
